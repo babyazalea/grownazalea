@@ -11,7 +11,6 @@ export default function Home() {
       </Head>
       <main>
         <h2>hello grownazalea</h2>
-        <h2>test</h2>
       </main>
     </div>
   );
