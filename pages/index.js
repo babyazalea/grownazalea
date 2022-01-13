@@ -1,5 +1,8 @@
 import Head from "next/head";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 export default function Home() {
   return (
     <div>
@@ -26,7 +29,7 @@ export default function Home() {
               <a className="navbar-brand me-auto" href="#">
                 grownazalea
               </a>
-              <ul className="navbar-nav mb-2 mb-lg-0 align-items-center justify-content-end">
+              <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end">
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">
                     Home
@@ -38,8 +41,8 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link fs-2">
-                    <i className="fab fa-github"></i>
+                  <a className="nav-link" style={{ cursor: "pointer" }}>
+                    <FontAwesomeIcon icon={faGithub} />
                   </a>
                 </li>
               </ul>
@@ -48,7 +51,7 @@ export default function Home() {
         </nav>
       </header>
       <main>
-        <h2>grownazalea</h2>
+        <h2>never grown</h2>
       </main>
     </div>
   );

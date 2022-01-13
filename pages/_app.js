@@ -2,7 +2,9 @@ import { useEffect } from "react";
 
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
-import "@fortawesome/fontawesome-free/css/fontawesome.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
