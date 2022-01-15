@@ -17,11 +17,17 @@ export default function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a className="navbar-brand me-auto" href="#">
-              grownazalea
+          <div
+            className="collapse navbar-collapse flex-column-sm align-items-center"
+            id="navbarTogglerDemo01"
+          >
+            <a
+              className="navbar-brand me-auto d-flex flex-column align-items-lg-center"
+              href="#"
+            >
+              <span className="font-monospace fst-italic">grownazalea</span>
             </a>
-            <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end">
+            <ul className="navbar-nav mb-2 mb-lg-0 justify-content-end align-items-lg-center gap-lg-4">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
                   Home
@@ -33,7 +39,10 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" style={{ cursor: "pointer" }}>
+                <a
+                  className="nav-link"
+                  style={{ cursor: "pointer", fontSize: "1.5rem" }}
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
