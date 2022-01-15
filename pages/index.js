@@ -1,9 +1,10 @@
 import Layout from "../components/layout";
+import Resume from "../components/resume/resume";
 
 export default function Home() {
   return (
     <Layout>
-      <h2>test</h2>
+      <Resume />
     </Layout>
   );
 }
