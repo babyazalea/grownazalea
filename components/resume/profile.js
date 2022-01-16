@@ -1,3 +1,8 @@
+import Image from "next/image";
+
+import profilePic from "../../public/profile-pic.JPG";
+import styles from "../../styles/profile.module.css";
+
 export default function Profile() {
   return (
     <div className="row border border-primary">
@@ -19,7 +24,16 @@ export default function Profile() {
           </div>
         </div>
       </div>
-      <div className="col-3 border border-warning"></div>
+      <div className="col-3 border border-warning d-flex justify-content-center">
+        <div className={styles["profile-pic-wrapper"]}>
+          <Image
+            src={profilePic}
+            className={styles["profile-pic"]}
+            alt="프로필 사진"
+            layout="fill"
+          />
+        </div>
+      </div>
     </div>
   );
 }

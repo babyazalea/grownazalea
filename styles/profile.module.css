@@ -1,0 +1,9 @@
+.profile-pic-wrapper {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+}
