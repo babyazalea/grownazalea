@@ -1,0 +1,16 @@
+.header {
+  border: 0.1rem solid red;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menus ul {
+  display: flex;
+  gap: 1rem;
+}
