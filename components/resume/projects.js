@@ -1,6 +1,8 @@
+import styles from "../../styles/projects.module.css";
+
 export default function Projects() {
   return (
-    <div className="row border border-primary">
+    <div className={styles.projects}>
       <span>projects</span>
     </div>
   );

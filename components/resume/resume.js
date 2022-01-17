@@ -3,9 +3,11 @@ import Profile from "./profile";
 import Projects from "./projects";
 import Skills from "./skills";
 
+import styles from "../../styles/resume.module.css";
+
 export default function Resume() {
   return (
-    <div className="container-fluid w-75 pt-5 d-flex flex-column gap-3">
+    <div className={styles.resume}>
       <Profile />
       <Introduction />
       <Skills />

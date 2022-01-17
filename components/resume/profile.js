@@ -5,26 +5,18 @@ import styles from "../../styles/profile.module.css";
 
 export default function Profile() {
   return (
-    <div className="row border border-primary">
-      <div className="col-9 border border-warning">
-        <div className="row">
-          <div className="col">
-            <div className="row">
-              <div className="col-2">
-                <span>name</span>
-              </div>
-              <div className="col-1">
-                <span>age</span>
-              </div>
-            </div>
-            <div className="row">
-              <span>email</span>
-              <span>github</span>
-            </div>
-          </div>
+    <div className={styles.profile}>
+      <div className="profile-text">
+        <div className="name-age">
+          <span>name</span>
+          <span>age</span>
+        </div>
+        <div className="email-github">
+          <span>email</span>
+          <span>email</span>
         </div>
       </div>
-      <div className="col-3 border border-warning d-flex justify-content-center">
+      <div className="profile-picture">
         <div className={styles["profile-pic-wrapper"]}>
           <Image
             src={profilePic}

@@ -1,3 +1,7 @@
+.profile {
+  border: 0.1rem solid pink;
+}
+
 .profile-pic-wrapper {
   position: relative;
   width: 130px;
