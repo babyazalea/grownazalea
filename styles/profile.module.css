@@ -1,5 +1,9 @@
 .profile {
   border: 0.1rem solid pink;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .profile-pic-wrapper {
@@ -8,6 +12,32 @@
   height: 130px;
 }
 
+.profile-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+
+.profile-text > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.profile-text > div span:first-child {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.profile-links a {
+  font-size: 1.5rem;
+}
+
 .profile-pic {
+  width: 20%;
   border-radius: 50%;
 }

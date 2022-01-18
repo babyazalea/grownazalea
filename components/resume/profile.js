@@ -1,19 +1,27 @@
 import Image from "next/image";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import profilePic from "../../public/profile-pic.JPG";
 import styles from "../../styles/profile.module.css";
+
+const babyazaleaProfile = {
+  name: "유태양",
+  email: "usun16@gmail.com",
+};
 
 export default function Profile() {
   return (
     <div className={styles.profile}>
-      <div className="profile-text">
-        <div className="name-age">
-          <span>name</span>
-          <span>age</span>
-        </div>
-        <div className="email-github">
-          <span>email</span>
-          <span>email</span>
+      <div className={styles["profile-text"]}>
+        <div>
+          <span>{babyazaleaProfile.name}</span>
+          <span>{babyazaleaProfile.email}</span>
+          <div className={styles["profile-links"]}>
+            <a href="https://github.com/babyazalea">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </div>
         </div>
       </div>
       <div className="profile-picture">

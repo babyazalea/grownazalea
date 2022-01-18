@@ -19,9 +19,7 @@ export default function Header() {
               <Link href="/portfolio">portfolio</Link>
             </li>
             <li>
-              <a href="https://github.com/babyazalea">
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
+              <Link href="/credits">credits</Link>
             </li>
           </ul>
         </div>
