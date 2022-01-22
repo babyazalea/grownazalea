@@ -114,7 +114,7 @@ export default function Skills() {
                 경험이 있습니다.
               </li>
               <li className={styles["underline-emphasis"]}>
-                Rxjs를 이용하여 데이터 흐름을 관리할 수 있습니다.
+                Rxjs를 이용하여 상태 & 데이터 흐름을 관리할 수 있습니다.
               </li>
             </ul>
           </div>
