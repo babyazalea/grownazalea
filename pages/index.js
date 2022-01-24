@@ -1,10 +1,21 @@
 import Layout from "../components/layout";
 import Resume from "../components/resume/resume";
 
-export default function Home() {
+import { getSortedProjectsData } from "../lib/projects";
+
+export default function Home({ allProjectsData }) {
   return (
     <Layout>
-      <Resume />
+      <Resume allProjectsData={allProjectsData} />
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const allProjectsData = getSortedProjectsData();
+  return {
+    props: {
+      allProjectsData,
+    },
+  };
 }
