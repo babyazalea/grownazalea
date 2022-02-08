@@ -6,16 +6,30 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.custom__nav {
+  gap: 3rem;
 }
 
-.nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 600px) {
+  .custom__nav {
+    gap: 0;
+  }
 }
 
-.menus ul {
-  display: flex;
-  gap: 1rem;
+@media (max-width: 480px) {
+  .custom__nav {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: row;
+  }
+
+  .custom__nav__right {
+    font-size: 1.3rem;
+  }
+
+  .custom__brand__text__xs {
+    font-size: 1.8rem;
+  }
 }

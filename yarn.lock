@@ -491,6 +491,11 @@ character-entities@^2.0.0:
   resolved "https://registry.yarnpkg.com/character-entities/-/character-entities-2.0.1.tgz#98724833e1e27990dee0bd0f2b8a859c3476aac7"
   integrity sha512-OzmutCf2Kmc+6DrFrrPS8/tDh2+DpnrfzdICHWhcVC9eOd0N1PXmQEE1a8iM4IziIAG+8tmTq3K+oo0ubH6RRQ==
 
+chota@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/chota/-/chota-0.8.0.tgz#46a2d87c9eea7e811017e5b410745b839a9f343a"
+  integrity sha512-6Y6MrULPNVup+9i+bFF5mXvifw4/N0AqcTO6VkhRcmRqY0XD2/EKq2kD8y7dX/PJnDq9ruHl2NURlPtGkMSNsg==
+
 color-convert@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz"
