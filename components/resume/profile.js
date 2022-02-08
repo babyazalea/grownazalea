@@ -12,26 +12,55 @@ const babyazaleaProfile = {
 
 export default function Profile() {
   return (
+    // <div className={styles.profile}>
+    //   <div className={styles["profile-text"]}>
+    //     <div>
+    //       <span>{babyazaleaProfile.name}</span>
+    //       <span>{babyazaleaProfile.email}</span>
+    //       <div className={styles["profile-links"]}>
+    //         <a href="https://github.com/babyazalea">
+    //           <FontAwesomeIcon icon={faGithub} />
+    //         </a>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <div className="profile-picture">
+    //     <div className={styles["profile-pic-wrapper"]}>
+    //       <Image
+    //         src={profilePic}
+    //         className={styles["profile-pic"]}
+    //         alt="프로필 사진"
+    //         layout="fill"
+    //       />
+    //     </div>
+    //   </div>
+    // </div>
     <div className={styles.profile}>
-      <div className={styles["profile-text"]}>
-        <div>
-          <span>{babyazaleaProfile.name}</span>
-          <span>{babyazaleaProfile.email}</span>
-          <div className={styles["profile-links"]}>
-            <a href="https://github.com/babyazalea">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
+      <div className="row is-full-width is-right">
+        <div className="col-5">
+          <div className={styles["profile-text"]}>
+            <div>
+              <span>{babyazaleaProfile.name}</span>
+              <span>{babyazaleaProfile.email}</span>
+              <div className={styles["profile-links"]}>
+                <a href="https://github.com/babyazalea">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="profile-picture">
-        <div className={styles["profile-pic-wrapper"]}>
-          <Image
-            src={profilePic}
-            className={styles["profile-pic"]}
-            alt="프로필 사진"
-            layout="fill"
-          />
+        <div className="col-2">
+          <div className="profile-picture">
+            <div className={styles["profile-pic-wrapper"]}>
+              <Image
+                src={profilePic}
+                className={styles["profile-pic"]}
+                alt="프로필 사진"
+                layout="fill"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
