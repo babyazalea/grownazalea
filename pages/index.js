@@ -1,3 +1,6 @@
+import { Fragment } from "react";
+import Head from "next/head";
+
 import Layout from "../components/layout";
 import Resume from "../components/resume/resume";
 
@@ -5,9 +8,17 @@ import { getSortedProjectsData } from "../lib/projects";
 
 export default function Home({ allProjectsData }) {
   return (
-    <Layout>
-      <Resume allProjectsData={allProjectsData} />
-    </Layout>
+    <Fragment>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </Head>
+      <Layout>
+        <Resume allProjectsData={allProjectsData} />
+      </Layout>
+    </Fragment>
   );
 }
 

@@ -1,4 +1,6 @@
-import { useEffect } from "react";
+import ProjectCard from "../project-card";
+
+// import { useEffect } from "react";
 import styles from "../../styles/projects.module.css";
 
 export default function Projects({ projects }) {
@@ -9,13 +11,15 @@ export default function Projects({ projects }) {
   return (
     <div className={styles.projects}>
       <span>projects</span>
-      <ul>
+      <ul className={styles.projectsCardUl}>
         {projects.map(({ id, title, date, skills, description }) => (
-          <li key={id}>
-            <span>{title}</span>
-            <span>{date}</span>
-            <span>{skills}</span>
-            <span>{description}</span>
+          <li className={styles.projectsCardLi} key={id}>
+            <ProjectCard
+              title={title}
+              date={date}
+              skills={skills.split(",")}
+              description={description}
+            />
           </li>
         ))}
       </ul>
