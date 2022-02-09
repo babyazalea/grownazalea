@@ -3,6 +3,7 @@
   height: 90%;
   display: grid;
   align-content: center;
+  gap: 2rem;
   grid-template-rows: 10rem 15rem auto auto;
   padding-top: 5rem;
 }

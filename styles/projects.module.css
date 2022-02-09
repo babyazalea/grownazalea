@@ -1,13 +1,12 @@
 .projects {
-  border: 0.1rem solid blue;
-  padding: 2rem;
   box-sizing: border-box;
 }
 
 .projectsCardUl {
+  margin-top: 2.5rem;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 

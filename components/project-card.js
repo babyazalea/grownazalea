@@ -1,27 +1,23 @@
+import SkillIcon from "./skill-icon";
+
 import cardStyles from "../styles/card.module.css";
 import styles from "../styles/project-card.module.css";
-import getSkillIconColor from "../lib/skill-icons";
 
 export default function ProjectCard(props) {
   return (
-    <div className={cardStyles.card}>
-      <div>
-        <span>{props.title}</span>
-        <span>{props.date}</span>
+    <div className={`${cardStyles.card} ${styles.projectCard}`}>
+      <div className={styles.projectCardLabel}>
+        <span className={styles.projectCardTitle}>{props.title}</span>
+        <span className={styles.projectCardDate}>{props.date}</span>
       </div>
-      <div>
+      <div className={styles.projectCardDescription}>
         <span>{props.description}</span>
       </div>
-      <div>
+      <div className={styles.projectCardSkills}>
         <ul className={styles.skillListUl}>
           {props.skills.map((skill) => (
             <li className={styles.skillListItem} key={skill}>
-              <img
-                src={`https://img.shields.io/badge/${skill}-555555?style=flat&logo=${skill}&logoColor=${getSkillIconColor(
-                  skill
-                )}`}
-                alt="Skill Icon"
-              />
+              <SkillIcon skill={skill} />
             </li>
           ))}
         </ul>
