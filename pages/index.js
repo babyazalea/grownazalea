@@ -4,7 +4,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Resume from "../components/resume/resume";
 
-import { getSortedProjectsData } from "../lib/projects";
+import { getAllProjectData } from "../lib/projects";
 
 export default function Home({ allProjectsData }) {
   return (
@@ -23,7 +23,7 @@ export default function Home({ allProjectsData }) {
 }
 
 export async function getStaticProps() {
-  const allProjectsData = getSortedProjectsData();
+  const allProjectsData = await getAllProjectData();
   return {
     props: {
       allProjectsData,
