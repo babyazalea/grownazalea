@@ -8,10 +8,18 @@
   align-items: center;
 }
 
+.header ul {
+  list-style: none;
+}
+
+.header li {
+  list-style: none;
+}
+
 .nav {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 

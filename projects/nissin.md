@@ -5,6 +5,6 @@ skills: 'html,css,jquery'
 description: 'NISSIN 브랜드 소개 페이지(정적 사이트).'
 ---
 
-#burger-finder
+# nissin
 
 - find your burger

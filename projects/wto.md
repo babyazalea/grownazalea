@@ -5,6 +5,6 @@ skills: 'nodejs,javascript,express,mongodb'
 description: '주문서 작성에 불편함을 덜어주는 초간단 미니 ERP(?).'
 ---
 
-#burger-finder
+# wto
 
 - find your burger
