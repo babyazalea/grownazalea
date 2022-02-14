@@ -1,8 +1,5 @@
 import Link from "next/link";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-
 import styles from "../styles/header.module.css";
 
 export default function Header() {
@@ -16,10 +13,7 @@ export default function Header() {
               <Link href={"/"}>resume</Link>
             </li>
             <li>
-              <Link href="/portfolio">portfolio</Link>
-            </li>
-            <li>
-              <Link href="/credits">credits</Link>
+              <Link href="/portfolios">portfolios</Link>
             </li>
           </ul>
         </div>
