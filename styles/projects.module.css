@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+.projects ul {
+  list-style: none;
+}
+
+.projects li {
+  list-style: none;
+}
+
 .projectsCardUl {
   margin-top: 2.5rem;
   padding: 0;

@@ -5,6 +5,6 @@ skills: 'html,css,javascript'
 description: '커플 디데이 계산기.'
 ---
 
-#burger-finder
+# Longtime
 
 - find your burger

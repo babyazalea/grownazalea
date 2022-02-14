@@ -5,6 +5,6 @@ skills: 'html,css'
 description: '처음 만든 웹 페이지(정적 사이트).'
 ---
 
-#burger-finder
+# Off the Record
 
 - find your burger

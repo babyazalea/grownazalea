@@ -3,7 +3,13 @@ import Header from "./header";
 
 import styles from "../styles/layout.module.css";
 
-export default function Layout({ children }) {
+export default function Layout({ children, isProjectPage }) {
+  let mainClassName = styles.main;
+
+  if (isProjectPage) {
+    mainClassName = `${styles.main} ${styles.project}`;
+  }
+
   return (
     <div className={styles.layout}>
       <Head>
@@ -12,7 +18,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className={styles.main}>{children}</main>
+      <main className={mainClassName}>{children}</main>
     </div>
   );
 }
