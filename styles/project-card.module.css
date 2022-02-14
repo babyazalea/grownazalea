@@ -1,0 +1,44 @@
+.projectCard {
+  height: 12rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: none;
+  display: grid;
+  grid-template-rows: 2fr 3fr 1fr;
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.projectCardLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.projectCardTitle {
+  font-size: 1.8rem;
+}
+
+.projectCardDate {
+  font-size: 0.8rem;
+}
+
+.projectCardDescription {
+  align-self: center;
+}
+
+.projectCardSkills {
+  align-self: center;
+}
+
+.skillListUl {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.skillListItem {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}

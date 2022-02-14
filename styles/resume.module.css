@@ -1,8 +1,9 @@
 .resume {
-  width: 75%;
+  width: 70%;
   height: 90%;
   display: grid;
   align-content: center;
-  grid-template-rows: 0.2fr 0.2fr 0.5fr 1fr;
-  padding-top: 2rem;
+  gap: 2rem;
+  grid-template-rows: 10rem 15rem auto auto;
+  padding-top: 5rem;
 }

@@ -1,7 +1,7 @@
-import styles from "../../styles/skills.module.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointRight } from "@fortawesome/free-regular-svg-icons";
+
+import styles from "../../styles/skills.module.css";
 
 export default function Skills() {
   return (
@@ -29,9 +29,8 @@ export default function Skills() {
                   CSS 문법을 올바른 방법으로 구사할 줄 압니다. flexbox, media
                   query, Sass 사용에 능숙
                 </span>
-                합니다. 순수하게 CSS만을 이용하는 반응형 웹 스타일링을
-                좋아합니다. Bootstrap, tailwind-css와 같은 CSS-Framework 사용
-                경험도 있습니다.
+                합니다. CSS를 이용한 반응형 웹 스타일링을 좋아합니다. Bootstrap,
+                tailwind-css와 같은 CSS-Framework 사용 경험도 있습니다.
               </li>
             </ul>
           </div>
