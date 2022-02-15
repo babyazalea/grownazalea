@@ -35,7 +35,7 @@ export default function ProjectCard({ project }) {
             </span>
           </a>
           {project.githubUrl2 && (
-            <a href={project.beGithubUrl} className={styles.projectLinksGithub}>
+            <a href={project.githubUrl2} className={styles.projectLinksGithub}>
               <span className={styles.githubIcon}>
                 <FontAwesomeIcon icon={faGithub} />
               </span>
