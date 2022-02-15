@@ -6,7 +6,3 @@ description: '커플 디데이 계산기'
 githubUrl1: 'https://github.com/babyazalea/longtime'
 serviceUrl: 'https://babyazalea.github.io/longtime/'
 ---
-
-# Longtime
-
-- find your burger

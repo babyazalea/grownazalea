@@ -6,7 +6,3 @@ description: 'Github API를 통해 나만의 저장소 리스트를 만들 수 �
 githubUrl1: 'https://github.com/babyazalea/mongnokam'
 serviceUrl: 'https://mongnokam.firebaseapp.com/'
 ---
-
-# mongnokam
-
-- find your burger
