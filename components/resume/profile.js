@@ -16,7 +16,7 @@ export default function Profile() {
       <div className={styles["profile-text"]}>
         <div>
           <span>{babyazaleaProfile.name}</span>
-          <span>{babyazaleaProfile.email}</span>
+          <a href={`mailto:${babyazaleaProfile.email}`}>{babyazaleaProfile.email}</a>
           <div className={styles["profile-links"]}>
             <a href="https://github.com/babyazalea">
               <FontAwesomeIcon icon={faGithub} />

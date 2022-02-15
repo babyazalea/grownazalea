@@ -26,7 +26,7 @@ export default function ProjectCard({ project }) {
           ))}
         </ul>
         <div className={styles.projectLinks}>
-          <a href={project.feGithubUrl} className={styles.projectLinksGithub}>
+          <a href={project.githubUrl1} className={styles.projectLinksGithub}>
             <span className={styles.githubIcon}>
               <FontAwesomeIcon icon={faGithub} />
             </span>
@@ -34,7 +34,7 @@ export default function ProjectCard({ project }) {
               <FontAwesomeIcon icon={fa1} />
             </span>
           </a>
-          {project.beGithubUrl && (
+          {project.githubUrl2 && (
             <a href={project.beGithubUrl} className={styles.projectLinksGithub}>
               <span className={styles.githubIcon}>
                 <FontAwesomeIcon icon={faGithub} />
