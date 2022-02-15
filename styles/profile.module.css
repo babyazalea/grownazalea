@@ -37,3 +37,10 @@
 .profile-pic {
   border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+  .profile {
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+}

@@ -7,3 +7,22 @@
   grid-template-rows: 10rem 15rem auto auto;
   padding-top: 5rem;
 }
+
+@media (max-width: 1200px) {
+  .resume {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .resume {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .resume {
+    width: 95%;
+  }
+}

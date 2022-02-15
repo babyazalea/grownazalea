@@ -8,14 +8,9 @@ export default function Projects({ projects }) {
       <h2>Projects</h2>
       <hr />
       <ul className={styles.projectsCardUl}>
-        {projects.map(({ id, title, date, skills, description }) => (
-          <li className={styles.projectsCardLi} key={id}>
-            <ProjectCard
-              title={title}
-              date={date}
-              skills={skills.split(",")}
-              description={description}
-            />
+        {projects.map((project) => (
+          <li className={styles.projectsCardLi} key={project.id}>
+            <ProjectCard project={project} />
           </li>
         ))}
       </ul>
