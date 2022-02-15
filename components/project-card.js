@@ -1,26 +1,55 @@
 import SkillIcon from "./skill-icon";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPlay, fa1, fa2 } from "@fortawesome/free-solid-svg-icons";
+
 import cardStyles from "../styles/card.module.css";
 import styles from "../styles/project-card.module.css";
 
-export default function ProjectCard(props) {
+export default function ProjectCard({ project }) {
   return (
     <div className={`${cardStyles.card} ${styles.projectCard}`}>
       <div className={styles.projectCardLabel}>
-        <span className={styles.projectCardTitle}>{props.title}</span>
-        <span className={styles.projectCardDate}>{props.date}</span>
+        <span className={styles.projectCardTitle}>{project.title}</span>
+        <span className={styles.projectCardDate}>{project.date}</span>
       </div>
       <div className={styles.projectCardDescription}>
-        <span>{props.description}</span>
+        <span>{project.description}</span>
       </div>
-      <div className={styles.projectCardSkills}>
+      <div className={styles.projectCardTail}>
         <ul className={styles.skillListUl}>
-          {props.skills.map((skill) => (
+          {project.skills.split(",").map((skill) => (
             <li className={styles.skillListItem} key={skill}>
               <SkillIcon skill={skill} />
             </li>
           ))}
         </ul>
+        <div className={styles.projectLinks}>
+          <a href={project.feGithubUrl} className={styles.projectLinksGithub}>
+            <span className={styles.githubIcon}>
+              <FontAwesomeIcon icon={faGithub} />
+            </span>
+            <span className={styles.githubIconText}>
+              <FontAwesomeIcon icon={fa1} />
+            </span>
+          </a>
+          {project.beGithubUrl && (
+            <a href={project.beGithubUrl} className={styles.projectLinksGithub}>
+              <span className={styles.githubIcon}>
+                <FontAwesomeIcon icon={faGithub} />
+              </span>
+              <span className={styles.githubIconText}>
+                <FontAwesomeIcon icon={fa2} />
+              </span>
+            </a>
+          )}
+          <a href={project.serviceUrl}>
+            <span>
+              <FontAwesomeIcon icon={faPlay} />
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );

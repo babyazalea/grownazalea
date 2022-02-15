@@ -12,7 +12,7 @@
 .projectCardLabel {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .projectCardTitle {
@@ -27,8 +27,10 @@
   align-self: center;
 }
 
-.projectCardSkills {
-  align-self: center;
+.projectCardTail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .skillListUl {
@@ -41,4 +43,27 @@
   display: flex;
   align-items: center;
   width: fit-content;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.projectLinks a {
+}
+
+.projectLinksGithub {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.githubIcon {
+  font-size: 1.5rem;
+}
+
+.githubIconText {
+  font-size: 0.7rem;
 }
