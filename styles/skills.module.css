@@ -1,6 +1,10 @@
 .skills {
 }
 
+.skills-title span {
+  font-size: 1rem;
+}
+
 .skills li {
   line-height: 1.7;
 }
@@ -47,4 +51,8 @@
 .ttattogat-link a {
   color: blue;
   margin-left: 0.5rem;
+}
+
+.udemy {
+  list-style: none;
 }
