@@ -29,8 +29,10 @@ export default function Skills() {
                   CSS 문법을 올바른 방법으로 구사할 줄 압니다. flexbox, media
                   query, Sass 사용에 능숙
                 </span>
-                합니다. CSS를 이용한 반응형 웹 스타일링을 좋아합니다. Bootstrap,
-                tailwind-css와 같은 CSS-Framework 사용 경험도 있습니다.
+                합니다. CSS만을 이용한 반응형 웹 스타일링을 할 수 있습니다.
+              </li>
+              <li>
+                Bootstrap과 같은 CSS Framework 사용 경험이 있으며, 요즘은 <span className={styles["underline-emphasis"]}>Tailwindcss를 사이드 프로젝트에 적극적으로 활용</span>하고 있습니다.
               </li>
             </ul>
           </div>
@@ -47,11 +49,10 @@ export default function Skills() {
                 </span>
                 <ul>
                   <li>
-                    var, let, const 각 키워드의 특징을 알고 적절하게 사용합니다.
-                    (var 키워드는 더이상 사용하지 않지만요!)
+                    let, const 각 변수 선언 방식의 특징을 알고 적절하게 사용합니다.
                   </li>
                   <li>
-                    자바스크립트의 데이터 타입과 그것을 분류하는 2가지인 윈시
+                    자바스크립트의 데이터 타입과 타입의 분류에 따른 윈시
                     타입과 객체 타입의 차이점을 알고, 활용할 수 있습니다.
                   </li>
                   <li>
@@ -61,9 +62,8 @@ export default function Skills() {
                   <li>
                     렉시컬 스코프, Temporal Dead Zone(TDZ), 변수 & 함수 호이스팅
                     등 자바스크립트 언어의 특이점(?)을 알고 있습니다. (이런
-                    특이점으로 발생하는 에러는 대부분 linter가 걸러주기에 문제가
-                    되지 않겠지만 에러가 왜 발생했는지, 에러가 발생하지 않으려면
-                    코드를 어떻게 짜야하는지 대해 배웠습니다.)
+                    특이점 때문에 발생하는 에러에 대한 경험이 있고, 에러가 발생하지 않으려면
+                    코드를 어떻게 짜야하는지 대해 배웠으며, 여러 개발 도서를 통해 심도 있는 지식을 쌓으려 노력 중입니다.)
                   </li>
                 </ul>
               </li>
@@ -96,7 +96,7 @@ export default function Skills() {
               </li>
               <li className={styles["underline-emphasis"]}>
                 useState, useEffect, Context API(useContext) 등 16.8버전 이후로
-                추가된 React의 기능들로 프로젝트를 만들 수 있습니다.
+                추가된 React의 기능(React Hooks)으로 프로젝트를 제작할 수 있습니다.
               </li>
               <li className={styles["underline-emphasis"]}>
                 Gatsby.js, Next.js를 이용해서 정적 사이트를 만들었습니다.

@@ -15,6 +15,7 @@ import nextjs from "../public/logos/nextjs-original.svg";
 import nodejs from "../public/logos/nodejs-plain.svg";
 import react from "../public/logos/react-original.svg";
 import sass from "../public/logos/sass-original.svg";
+import tailwindcss from "../public/logos/tailwindcss-plain.svg";
 
 import styles from "../styles/skill-icon.module.css";
 
@@ -66,6 +67,9 @@ export default function SkillIcon(props) {
     case "sass":
       skillIconSrc = sass;
       break;
+    case "tailwindcss":
+      skillIconSrc = tailwindcss;
+      break;
     default:
       setNoIcon(true);
   }
@@ -75,7 +79,7 @@ export default function SkillIcon(props) {
       {noIcon ? (
         <span>{props.skill}</span>
       ) : (
-        <Image src={skillIconSrc} alt="Skill Icon" />
+        <Image src={skillIconSrc} alt="Skill Icon" title={props.skill} />
       )}
     </div>
   );

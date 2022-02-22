@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import profilePic from "../../public/profile-pic.JPG";
 import styles from "../../styles/profile.module.css";
 
-const babyazaleaProfile = {
+const tyange = {
   name: "유태양",
   email: "usun16@gmail.com",
 };
@@ -15,10 +15,10 @@ export default function Profile() {
     <div className={styles.profile}>
       <div className={styles["profile-text"]}>
         <div>
-          <span>{babyazaleaProfile.name}</span>
-          <a href={`mailto:${babyazaleaProfile.email}`}>{babyazaleaProfile.email}</a>
+          <span>{tyange.name}</span>
+          <a href={`mailto:${tyange.email}`}>{tyange.email}</a>
           <div className={styles["profile-links"]}>
-            <a href="https://github.com/babyazalea">
+            <a href="https://github.com/tyange">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
