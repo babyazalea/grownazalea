@@ -139,7 +139,7 @@ export default function Skills() {
                 (진행 상황 보러가기
                 <div className={styles["ttattogat-link"]}>
                   <FontAwesomeIcon icon={faHandPointRight} />
-                  <a href="https://babyazalea.notion.site/Flutter-0f1a04b91c2b464583a16b31250359ad">
+                  <a href="https://tyange.notion.site/Flutter-0f1a04b91c2b464583a16b31250359ad">
                     Go!
                   </a>
                   )
