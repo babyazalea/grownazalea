@@ -10,6 +10,8 @@ Next.js로 만든 개인 이력서 페이지
     - Vercel 통해 배포
 * 2022-01
     - 프로젝트 시작
+
+[작업 일지 & Todos (Notion)](https://tyange.notion.site/time-to-grow-up-Next-js-0ccdce7f094a43499cf14f31a7adaea1)
 <br>
 <br>
 
