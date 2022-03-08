@@ -4,7 +4,7 @@
   display: grid;
   align-content: center;
   gap: 2rem;
-  grid-template-rows: 10rem 15rem auto auto;
+  grid-template-rows: 10rem auto auto auto;
   padding-top: 5rem;
 }
 
@@ -13,7 +13,6 @@
     width: 80%;
   }
 }
-
 
 @media (max-width: 768px) {
   .resume {
