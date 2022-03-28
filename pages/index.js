@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import Head from "next/head";
 
 import Layout from "../components/layout";
@@ -8,7 +7,7 @@ import { getAllProjectData } from "../lib/projects";
 
 export default function Home({ allProjectsData }) {
   return (
-    <Fragment>
+    <>
       <Head>
         <link
           rel="stylesheet"
@@ -18,7 +17,7 @@ export default function Home({ allProjectsData }) {
       <Layout>
         <Resume allProjectsData={allProjectsData} />
       </Layout>
-    </Fragment>
+    </>
   );
 }
 
