@@ -6,6 +6,20 @@ import Resume from "../components/resume/resume";
 import { getAllProjectData } from "../lib/projects";
 
 export default function Home({ allProjectsData }) {
+  const filterOutName = [
+    "asuwant",
+    "burger-finder",
+    "mongnokam",
+    "time-to-grow-up",
+    "tyange-blog",
+    "wto",
+    "longtime",
+  ];
+
+  const representativeProjects = allProjectsData.filter((project) =>
+    filterOutName.includes(project.id)
+  );
+
   return (
     <>
       <Head>
@@ -15,7 +29,7 @@ export default function Home({ allProjectsData }) {
         />
       </Head>
       <Layout>
-        <Resume allProjectsData={allProjectsData} />
+        <Resume allProjectsData={representativeProjects} />
       </Layout>
     </>
   );
