@@ -1,35 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import styles from "../../styles/introduction.module.css";
 
-export default function Introduction() {
+export default function Introduction({ introductionData }) {
   return (
     <div className={styles.introduction}>
-      <h2>Introduction</h2>
+      <h2>짧은 자기소개</h2>
       <hr />
-      <article>
-        <p>
-          2019년, 독학으로 React를 배우며 프론트엔드 개발을 시작했습니다. 이후
-          여러 사이드 프로젝트를 만들며 배운 것을 단단히 다져나가고 있습니다.
-          이런 반복은 '소프트웨어 개발' 대한 전반적인 두려움을 줄여주었습니다.
-          한편 코딩에 앞서 개발 계획을 세우고 시간 배분을 하는 등 코드를 치는
-          것보다 개발에 대한 큰 틀을 잡는 일이 훨씬 더 어려운 일이라는 걸
-          느꼈습니다. 현재 저에게 개발이란 누군가가 시켜서 하는 일이 아니기에,
-          더 효율적으로 시간을 관리하고 때에 따라 알맞게 목표를 세우고 조정하는
-          방법을 계속 고민하며 부딪혀 나가는 중입니다.
-        </p>
-        <p>
-          앞으로도 저는 조금씩이라도 꾸준히, 저의 사이드 프로젝트들을 업데이트할
-          예정입니다. 제가 쓴 코드들, 또 써낼 코드들은 수십 만 사용자가 쓰는
-          대단한 프로그램이 되기엔 부족한 코드일지도 모르겠습니다. 다만 그
-          코드들은 제가 내일 써야할 다른 코드들의 출발점이 되었고, 또 고치고
-          다듬을 수 있는 '작은 작품'이 되며 제 삶에 작은 변화들을 가져다
-          주었습니다. 저는 프로그래밍을 하며 이렇게 하루하루 제가 할 수 있는
-          일이 있고, 또 해야할 일이 생겨나는 것이 꽤나 즐겁습니다. 큰 꿈이
-          있다면 오픈소스로 된 '통합 Ebook 서비스'를 만들어 보는 것입니다.
-          달팽이처럼 느리게 가겠지만, 언젠가 저의 코드가 더 많은 사람들에게 닿게
-          될 거라고 믿습니다.
-        </p>
-      </article>
+      <div dangerouslySetInnerHTML={{ __html: introductionData.contentHtml }} />
     </div>
   );
 }

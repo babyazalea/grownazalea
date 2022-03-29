@@ -4,8 +4,9 @@ import Layout from "../components/layout";
 import Resume from "../components/resume/resume";
 
 import { getAllProjectData } from "../lib/projects";
+import { getAllResumeData } from "../lib/resume";
 
-export default function Home({ allProjectsData }) {
+export default function Home({ allResumeData, allProjectsData }) {
   const filterOutName = [
     "asuwant",
     "burger-finder",
@@ -20,6 +21,14 @@ export default function Home({ allProjectsData }) {
     filterOutName.includes(project.id)
   );
 
+  const introductionData = allResumeData.find(
+    (resumeData) => resumeData.id === "introduction"
+  );
+
+  const skillsData = allResumeData.find(
+    (resumeData) => resumeData.id === "skills"
+  );
+
   return (
     <>
       <Head>
@@ -29,16 +38,23 @@ export default function Home({ allProjectsData }) {
         />
       </Head>
       <Layout>
-        <Resume allProjectsData={representativeProjects} />
+        <Resume
+          introductionData={introductionData}
+          skillsData={skillsData}
+          allProjectsData={representativeProjects}
+        />
       </Layout>
     </>
   );
 }
 
 export async function getStaticProps() {
+  const allResumeData = await getAllResumeData();
   const allProjectsData = await getAllProjectData();
+
   return {
     props: {
+      allResumeData,
       allProjectsData,
     },
   };

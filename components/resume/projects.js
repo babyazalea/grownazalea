@@ -5,7 +5,7 @@ import styles from "../../styles/projects.module.css";
 export default function Projects({ projects }) {
   return (
     <div className={styles.projects}>
-      <h2>Projects</h2>
+      <h2>대표적인 프로젝트</h2>
       <hr />
       <ul className={styles.projectsCardUl}>
         {projects.map((project) => (

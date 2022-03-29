@@ -5,12 +5,16 @@ import Skills from "./skills";
 
 import styles from "../../styles/resume.module.css";
 
-export default function Resume({ allProjectsData }) {
+export default function Resume({
+  introductionData,
+  skillsData,
+  allProjectsData,
+}) {
   return (
     <div className={styles.resume}>
       <Profile />
-      <Introduction />
-      <Skills />
+      <Introduction introductionData={introductionData} />
+      <Skills skillsData={skillsData} />
       <Projects projects={allProjectsData} />
     </div>
   );
