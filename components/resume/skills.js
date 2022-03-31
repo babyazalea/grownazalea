@@ -1,3 +1,4 @@
+import { MDXRemote } from "next-mdx-remote";
 import styles from "../../styles/skills.module.css";
 
 export default function Skills({ skillsData }) {
@@ -5,7 +6,7 @@ export default function Skills({ skillsData }) {
     <div className={styles.skills}>
       <h2 className={styles["skills-title"]}>쓰고 있는 기술들</h2>
       <hr />
-      <div dangerouslySetInnerHTML={{ __html: skillsData.contentHtml }} />
+      <MDXRemote {...skillsData.mdxSource} />
     </div>
   );
 }
