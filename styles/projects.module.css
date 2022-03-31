@@ -2,23 +2,15 @@
   box-sizing: border-box;
 }
 
-.projects ul {
-  list-style: none;
-}
-
-.projects li {
-  list-style: none;
-}
-
 .projectsCardUl {
   margin-top: 2.5rem;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
 
 .projectsCardLi {
+  list-style: none;
   width: 100%;
-  height: 100%;
+  height: fit-content;
 }

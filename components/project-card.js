@@ -1,5 +1,6 @@
 import SkillIcon from "./skill-icon";
 
+import { MDXRemote } from "next-mdx-remote";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPlay, fa1, fa2 } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +16,16 @@ export default function ProjectCard({ project }) {
         <span className={styles.projectCardDate}>{project.date}</span>
       </div>
       <div className={styles.projectCardDescription}>
-        <span>{project.description}</span>
+        {project.mdxSource ? (
+          <>
+            <span>{project.description}</span>
+            <article className={styles.projectDetail}>
+              <MDXRemote {...project.mdxSource} />
+            </article>
+          </>
+        ) : (
+          <span>{project.description}</span>
+        )}
       </div>
       <div className={styles.projectCardTail}>
         <ul className={styles.skillListUl}>

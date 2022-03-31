@@ -1,11 +1,10 @@
 .projectCard {
-  height: 12rem;
-  padding: 1rem;
+  height: fit-content;
+  padding: 2rem;
   box-sizing: border-box;
   border: none;
   display: grid;
-  grid-template-rows: 2fr 3fr 1fr;
-  gap: 1.5rem;
+  gap: 1rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
@@ -25,6 +24,22 @@
 
 .projectCardDescription {
   align-self: center;
+}
+
+.projectDetail {
+  padding-top: 1rem;
+}
+
+.projectDetail li:not(:last-child) {
+  padding-bottom: 1rem;
+}
+
+.projectDetail a {
+  color: #4b70fd;
+}
+
+.projectDetail a:visited {
+  color: #8c59b9;
 }
 
 .projectCardTail {
