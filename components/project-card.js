@@ -3,7 +3,12 @@ import SkillIcon from "./skill-icon";
 import { MDXRemote } from "next-mdx-remote";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faPlay, fa1, fa2 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlay,
+  fa1,
+  fa2,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 import cardStyles from "../styles/card.module.css";
 import styles from "../styles/project-card.module.css";
@@ -18,7 +23,7 @@ export default function ProjectCard({ project }) {
       <div className={styles.projectCardDescription}>
         {project.mdxSource ? (
           <>
-            <span>{project.description}</span>
+            <span style={{ marginLeft: "0.5rem" }}>{project.description}</span>
             <article className={styles.projectDetail}>
               <MDXRemote {...project.mdxSource} />
             </article>
