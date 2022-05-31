@@ -2,6 +2,24 @@
   box-sizing: border-box;
 }
 
+.projectsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectsHeader > a {
+  border-radius: 0.5rem;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 0.5rem;
+}
+
+.projectsHeader span {
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
 .projectsCardUl {
   margin-top: 2.5rem;
   padding: 0;
