@@ -16,6 +16,9 @@ import nodejs from "../public/logos/nodejs-plain.svg";
 import react from "../public/logos/react-original.svg";
 import sass from "../public/logos/sass-original.svg";
 import tailwindcss from "../public/logos/tailwindcss-plain.svg";
+import vue from "../public/logos/vuejs-original.svg";
+import pinia from "../public/logos/pinia-logo.svg";
+import typescriptLogo from "../public/logos/typescript-original.svg";
 
 import styles from "../styles/skill-icon.module.css";
 
@@ -70,6 +73,15 @@ export default function SkillIcon(props) {
     case "tailwindcss":
       skillIconSrc = tailwindcss;
       break;
+    case "vue":
+      skillIconSrc = vue;
+      break;
+    case "pinia":
+      skillIconSrc = pinia;
+      break;
+    case "typescript":
+      skillIconSrc = typescriptLogo;
+      break;
     default:
       setNoIcon(true);
   }
@@ -79,7 +91,7 @@ export default function SkillIcon(props) {
       {noIcon ? (
         <span>{props.skill}</span>
       ) : (
-        <Image src={skillIconSrc} alt="Skill Icon" title={props.skill} />
+        <Image src={skillIconSrc} alt="Skill Icon" title={props.skill} layout="fill" />
       )}
     </div>
   );

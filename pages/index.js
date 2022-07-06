@@ -8,6 +8,7 @@ import { getAllResumeData } from "../lib/resume";
 
 export default function Home({ allResumeData, allProjectsData }) {
   const filterOutName = [
+    "to-be-published",
     "asuwant",
     "burger-finder",
     "mongnokam",
