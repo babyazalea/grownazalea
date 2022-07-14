@@ -35,11 +35,7 @@
 }
 
 .projectDetail a {
-  color: #4b70fd;
-}
-
-.projectDetail a:visited {
-  color: #8c59b9;
+  font-weight: bold;
 }
 
 .projectCardTail {

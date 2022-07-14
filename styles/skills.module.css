@@ -1,6 +1,18 @@
 .skills {
 }
 
+.skills > ul li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.skills > ul li > ul {
+  margin-top: 0.8rem;
+}
+
+.skills a {
+  font-weight: 500;
+}
+
 .skills-title span {
   font-size: 1rem;
 }
@@ -41,16 +53,6 @@
 
 .framework li {
   list-style: disc;
-}
-
-.ttattogat-link {
-  display: inline;
-  margin-left: 0.5rem;
-}
-
-.ttattogat-link a {
-  color: blue;
-  margin-left: 0.5rem;
 }
 
 .udemy {
