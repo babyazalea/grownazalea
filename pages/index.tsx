@@ -1,3 +1,4 @@
+import { MDXRemoteSerializeResult } from "next-mdx-remote/dist/types";
 import Head from "next/head";
 
 import Layout from "../components/layout";
@@ -5,8 +6,14 @@ import Resume from "../components/resume/resume";
 
 import { getAllProjectData } from "../lib/projects";
 import { getAllResumeData } from "../lib/resume";
+import { MdxResource, ProjectMdxResource } from "../types/types";
 
-export default function Home({ allResumeData, allProjectsData }) {
+type HomeProps = {
+  allResumeData: MdxResource[];
+  allProjectsData: ProjectMdxResource[];
+};
+
+export default function Home({ allResumeData, allProjectsData }: HomeProps) {
   const filterOutName = [
     "to-be-published",
     "asuwant",

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ReactChild, ReactFragment, useState } from "react";
 import Image from "next/image";
 
 import angular from "../public/logos/angularjs-plain.svg";
@@ -25,12 +25,16 @@ import styledLogo from "../public/logos/styled-components.svg";
 
 import styles from "../styles/skill-icon.module.css";
 
-export default function SkillIcon(props) {
+type SkillIconProps = {
+  skill: string;
+};
+
+export default function SkillIcon({ skill }: SkillIconProps) {
   const [noIcon, setNoIcon] = useState(false);
 
   let skillIconSrc;
 
-  switch (props.skill) {
+  switch (skill) {
     case "angular":
       skillIconSrc = angular;
       break;
@@ -101,9 +105,14 @@ export default function SkillIcon(props) {
   return (
     <div className={styles.skillIcon}>
       {noIcon ? (
-        <span>{props.skill}</span>
+        <span>{skill}</span>
       ) : (
-        <Image src={skillIconSrc} alt="Skill Icon" title={props.skill} layout="fill" />
+        <Image
+          src={skillIconSrc}
+          alt="Skill Icon"
+          title={skill}
+          layout="fill"
+        />
       )}
     </div>
   );

@@ -1,19 +1,20 @@
 import SkillIcon from "./skill-icon";
 
-import { MDXRemote } from "next-mdx-remote";
+import { MDXRemote, MDXRemoteProps } from "next-mdx-remote";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-  faPlay,
-  fa1,
-  fa2,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPlay, fa1, fa2 } from "@fortawesome/free-solid-svg-icons";
 
 import cardStyles from "../styles/card.module.css";
 import styles from "../styles/project-card.module.css";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { ProjectMdxResource } from "../types/types";
 
-export default function ProjectCard({ project }) {
+type ProjectCardProps = {
+  project: ProjectMdxResource;
+};
+
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className={`${cardStyles.card} ${styles.projectCard}`}>
       <div className={styles.projectCardLabel}>
@@ -43,25 +44,25 @@ export default function ProjectCard({ project }) {
         <div className={styles.projectLinks}>
           <a href={project.githubUrl1} className={styles.projectLinksGithub}>
             <span className={styles.githubIcon}>
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub as IconProp} />
             </span>
             <span className={styles.githubIconText}>
-              <FontAwesomeIcon icon={fa1} />
+              <FontAwesomeIcon icon={fa1 as IconProp} />
             </span>
           </a>
           {project.githubUrl2 && (
             <a href={project.githubUrl2} className={styles.projectLinksGithub}>
               <span className={styles.githubIcon}>
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithub as IconProp} />
               </span>
               <span className={styles.githubIconText}>
-                <FontAwesomeIcon icon={fa2} />
+                <FontAwesomeIcon icon={fa2 as IconProp} />
               </span>
             </a>
           )}
           <a href={project.serviceUrl}>
             <span>
-              <FontAwesomeIcon icon={faPlay} />
+              <FontAwesomeIcon icon={faPlay as IconProp} />
             </span>
           </a>
         </div>
