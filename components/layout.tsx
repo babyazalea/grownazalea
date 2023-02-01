@@ -2,8 +2,14 @@ import Head from "next/head";
 import Header from "./header";
 
 import styles from "../styles/layout.module.css";
+import { ReactNode } from "react";
 
-export default function Layout({ children, isProjectPage }) {
+type LayoutProps = {
+  children: ReactNode;
+  isProjectPage?: boolean;
+};
+
+export default function Layout({ children, isProjectPage }: LayoutProps) {
   let mainClassName = styles.main;
 
   if (isProjectPage) {

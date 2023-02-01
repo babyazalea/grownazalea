@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import profilePic from "../../public/profile-pic.png";
 import styles from "../../styles/profile.module.css";
@@ -19,7 +20,7 @@ export default function Profile() {
           <a href={`mailto:${tyange.email}`}>{tyange.email}</a>
           <div className={styles["profile-links"]}>
             <a href="https://github.com/tyange">
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub as IconProp} />
             </a>
           </div>
         </div>

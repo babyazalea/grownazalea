@@ -9,7 +9,7 @@ const projectsDirectory = path.join(process.cwd(), "projects");
 
 export async function getAllProjectData() {
   const fileNames = fs.readdirSync(projectsDirectory);
-  const allProjectsData = await Promise.all(
+  const allProjectsData: any = await Promise.all(
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.mdx$/, "");
 
@@ -28,10 +28,10 @@ export async function getAllProjectData() {
     })
   );
 
-  return allProjectsData.sort(({ date: a }, { date: b }) => {
-    if (a < b) {
+  return allProjectsData.sort((a: { date: string }, b: { date: string }) => {
+    if (new Date(a.date) < new Date(b.date)) {
       return 1;
-    } else if (a > b) {
+    } else if (new Date(a.date) > new Date(b.date)) {
       return -1;
     } else {
       0;
@@ -50,7 +50,7 @@ export async function getAllProjectIds() {
   });
 }
 
-export async function getProjectData(id) {
+export async function getProjectData(id: string) {
   const fullPath = path.join(projectsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
