@@ -2,7 +2,7 @@
 part: "skills"
 ---
 
-### 기술에 대한 이해도
+### 프로그래밍 언어
 
 - HTML & CSS
   - 마크업 개발 가능.
@@ -15,6 +15,8 @@ part: "skills"
   - [Express](https://expressjs.com/ko/), [MongoDB](https://www.mongodb.com/ko-kr)를 이용하여 백엔드 환경을 구성하고 이를 사이드 프로젝트에
     적용해본 경험이 있습니다.
   - npm, yarn과 같은 패키지 매니저로 필요한 패키지를 설치하고 때에 따라 패키지(들)의 버전 관리를 할 수 있습니다.
+- Go
+  - [gin-gonic](https://gin-gonic.com/), [fiber](https://gofiber.io/)를 사용한 경험이 있습니다.
 - Git & Github
   - 터미널에서 기본적인 Git 명령어를 쓸 수 있습니다.
   - 별도의 브랜치를 생성하고 작업하여 기존 브랜치에 병합할 수 있습니다.
@@ -35,13 +37,17 @@ part: "skills"
   - [Firebase](https://firebase.google.com/?hl=ko), [Github API](https://docs.github.com/en/rest)를 이용해서 사이드 프로젝트를 만든
     경험이 있습니다.
   - [Rxjs](https://rxjs.dev/)를 이용하여 상태 & 데이터 흐름을 관리할 수 있습니다.
+- Flutter
+  - Widget Driven Development! 요즘 가장 관심 있는 프레임워크로 열심히 배우고 있습니다.
+- 그 외..
+  - [SolidJS](https://www.solidjs.com/), [SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart),[SvelteKit](https://kit.svelte.dev/) 등을 사용한 경험이 있습니다.
 
-### 개발 공부 이력
+### 개발 공부한 것들...
 
 - 오프라인
 
   - 2018-10 ~ 2019-04 : ⌜웹 & 앱 프론트엔드⌟ 국비지원 과정 수료.
-  - 2021 ~ 현재 : 한국방송통신대학 컴퓨터학과 3학년 재학 중.
+  - 2021 ~ 현재 : 한국방송통신대학 컴퓨터학과 4학년 재학 중.
 
 - 온라인
   - Udemy Courses:
