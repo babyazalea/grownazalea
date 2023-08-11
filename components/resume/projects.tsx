@@ -17,6 +17,8 @@ type ProjectsProps = {
     githubUrl1: string;
     githubUrl2?: string;
     serviceUrl: string;
+    isDeprecated: string;
+    announcement?: string;
   }[];
 };
 
