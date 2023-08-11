@@ -17,8 +17,28 @@ type ProjectCardProps = {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className={`${cardStyles.card} ${styles.projectCard}`}>
+      <div
+        className={
+          project.isDeprecated === "Y" ? styles.projectCardDeprecated : ""
+        }
+      ></div>
       <div className={styles.projectCardLabel}>
-        <span className={styles.projectCardTitle}>{project.title}</span>
+        <div>
+          <span
+            className={
+              project.isDeprecated === "Y"
+                ? styles.projectCardTitleDeprecated
+                : styles.projectCardTitle
+            }
+          >
+            {project.title}
+          </span>
+          {project.isDeprecated === "Y" && (
+            <span className={styles.projectCardAnnouncement}>
+              {project.announcement}
+            </span>
+          )}
+        </div>
         <span className={styles.projectCardDate}>{project.date}</span>
       </div>
       <div className={styles.projectCardDescription}>

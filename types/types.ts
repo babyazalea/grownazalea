@@ -15,4 +15,6 @@ export type ProjectMdxResource = {
   githubUrl1: string;
   githubUrl2?: string;
   serviceUrl: string;
+  isDeprecated: string;
+  announcement?: string;
 };
