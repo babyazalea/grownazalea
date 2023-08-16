@@ -38,7 +38,7 @@ part: "skills"
 - Flutter
   - [Riverpod](https://riverpod.dev/ko/)을 사용한 경험이 있습니다. 최근에 가장 많이 공부하고 있는 프레임워크입니다.
 - 그 외..
-  - [SolidJS](https://www.solidjs.com/), [SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart),[SvelteKit](https://kit.svelte.dev/) 등을 사용한 경험이 있습니다.
+  - [SolidJS](https://www.solidjs.com/), [SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart), [SvelteKit](https://kit.svelte.dev/) 등을 사용한 경험이 있습니다.
 
 ### 개발 공부한 것들...
 
