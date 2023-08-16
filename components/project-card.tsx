@@ -1,6 +1,6 @@
 import SkillIcon from "./skill-icon";
 
-import { MDXRemote, MDXRemoteProps } from "next-mdx-remote";
+import { MDXRemote } from "next-mdx-remote";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPlay, fa1, fa2 } from "@fortawesome/free-solid-svg-icons";
@@ -17,27 +17,9 @@ type ProjectCardProps = {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className={`${cardStyles.card} ${styles.projectCard}`}>
-      <div
-        className={
-          project.isDeprecated === "Y" ? styles.projectCardDeprecated : ""
-        }
-      ></div>
       <div className={styles.projectCardLabel}>
         <div>
-          <span
-            className={
-              project.isDeprecated === "Y"
-                ? styles.projectCardTitleDeprecated
-                : styles.projectCardTitle
-            }
-          >
-            {project.title}
-          </span>
-          {project.isDeprecated === "Y" && (
-            <span className={styles.projectCardAnnouncement}>
-              {project.announcement}
-            </span>
-          )}
+          <span className={styles.projectCardTitle}>{project.title}</span>
         </div>
         <span className={styles.projectCardDate}>{project.date}</span>
       </div>
@@ -61,30 +43,40 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </li>
           ))}
         </ul>
-        <div className={styles.projectLinks}>
-          <a href={project.githubUrl1} className={styles.projectLinksGithub}>
-            <span className={styles.githubIcon}>
-              <FontAwesomeIcon icon={faGithub as IconProp} />
+        <div className={styles.projectLinksWrapper}>
+          {project.isDeprecated === "Y" && (
+            <span className={styles.projectCardAnnouncement}>
+              {project.announcement}
             </span>
-            <span className={styles.githubIconText}>
-              <FontAwesomeIcon icon={fa1 as IconProp} />
-            </span>
-          </a>
-          {project.githubUrl2 && (
-            <a href={project.githubUrl2} className={styles.projectLinksGithub}>
+          )}
+          <div className={styles.projectLinks}>
+            <a href={project.githubUrl1} className={styles.projectLinksGithub}>
               <span className={styles.githubIcon}>
                 <FontAwesomeIcon icon={faGithub as IconProp} />
               </span>
               <span className={styles.githubIconText}>
-                <FontAwesomeIcon icon={fa2 as IconProp} />
+                <FontAwesomeIcon icon={fa1 as IconProp} />
               </span>
             </a>
-          )}
-          <a href={project.serviceUrl}>
-            <span>
-              <FontAwesomeIcon icon={faPlay as IconProp} />
-            </span>
-          </a>
+            {project.githubUrl2 && (
+              <a
+                href={project.githubUrl2}
+                className={styles.projectLinksGithub}
+              >
+                <span className={styles.githubIcon}>
+                  <FontAwesomeIcon icon={faGithub as IconProp} />
+                </span>
+                <span className={styles.githubIconText}>
+                  <FontAwesomeIcon icon={fa2 as IconProp} />
+                </span>
+              </a>
+            )}
+            <a href={project.serviceUrl}>
+              <span>
+                <FontAwesomeIcon icon={faPlay as IconProp} />
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

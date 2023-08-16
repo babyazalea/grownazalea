@@ -11,13 +11,7 @@
 }
 
 .projectCardDeprecated {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .projectCardLabel {
@@ -28,17 +22,6 @@
 
 .projectCardTitle {
   font-size: 1.8rem;
-}
-
-.projectCardTitleDeprecated {
-  font-size: 1.8rem;
-  text-decoration: line-through;
-}
-
-.projectCardAnnouncement {
-  font-size: 0.8rem;
-  margin-left: 1rem;
-  color: #cc3300;
 }
 
 .projectCardDate {
@@ -77,6 +60,18 @@
   display: flex;
   align-items: center;
   width: fit-content;
+}
+
+.projectLinksWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projectCardAnnouncement {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: right;
 }
 
 .projectLinks {
