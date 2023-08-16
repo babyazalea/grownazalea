@@ -19,7 +19,7 @@ part: "skills"
   - [gin-gonic](https://gin-gonic.com/), [fiber](https://gofiber.io/)를 사용한 경험이 있습니다.
 - Git (VCS)
   - Git 명령어를 쓸 수 있습니다.
-  - 작업 브랜치를 분리하고 이슈를 생성, PR을 날리는 등 기 VCS를 이용한 작업 흐름에 능숙합니다.
+  - 작업 브랜치를 분리하고 이슈 생성, Pull Request 등 VCS를 이용한 작업 흐름에 능숙합니다.
 - CI/CD
   - [Vercel](https://vercel.com/), [Heroku](https://www.heroku.com/), [Firebase](https://firebase.google.com/?hl=ko), [Gihub Pages](https://pages.github.com/)를 사용한 경험이 있고 해당 도구들을 이용해 배포를 진행할 수 있습니다.
 
@@ -34,7 +34,7 @@ part: "skills"
   - 전역 상태 관리 도구인 [Pinia](https://pinia.vuejs.org/)를 사용한 경험이 있습니다.
 - Angular
   - [Firebase](https://firebase.google.com/?hl=ko), [Github API](https://docs.github.com/en/rest)를 이용해서 사이드 프로젝트를 제작했습니다.
-  - [Rxjs](https://rxjs.dev/)를 이용하여 상태 & 데이터 흐름을 관리할 수 있습니다.
+  - [Rxjs](https://rxjs.dev/)를 이용하여 상태 & 데이터 흐름을 관리한 경험이 있습니다.
 - Flutter
   - [Riverpod](https://riverpod.dev/ko/)을 사용한 경험이 있습니다. 최근에 가장 많이 공부하고 있는 프레임워크입니다.
 - 그 외..
