@@ -1,4 +1,3 @@
-import { MDXRemoteSerializeResult } from "next-mdx-remote/dist/types";
 import Head from "next/head";
 
 import Layout from "../components/layout";

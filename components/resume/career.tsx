@@ -1,6 +1,7 @@
 import { MDXRemote } from "next-mdx-remote";
-import styles from "../../styles/introduction.module.css";
 import { MdxResource } from "../../types/types";
+
+import styles from "../../styles/career.module.css";
 
 type IntroductionProps = {
   careerData: MdxResource;
@@ -8,7 +9,7 @@ type IntroductionProps = {
 
 export default function Career({ careerData }: IntroductionProps) {
   return (
-    <div>
+    <div className={styles.career}>
       <h2>이력</h2>
       <hr />
       <MDXRemote {...careerData.mdxSource} />
