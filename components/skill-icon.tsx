@@ -22,6 +22,7 @@ import typescriptLogo from "../public/logos/typescript-original.svg";
 import zustandLogo from "../public/logos/zustand-logo.png";
 import reactQueryLogo from "../public/logos/react-query-logo.svg";
 import styledLogo from "../public/logos/styled-components.svg";
+import viteLogo from "../public/logos/vite-logo.png";
 
 import styles from "../styles/skill-icon.module.css";
 
@@ -97,6 +98,9 @@ export default function SkillIcon({ skill }: SkillIconProps) {
       break;
     case "styled":
       skillIconSrc = styledLogo;
+      break;
+    case "vite":
+      skillIconSrc = viteLogo;
       break;
     default:
       setNoIcon(true);
