@@ -14,6 +14,7 @@ type HomeProps = {
 
 export default function Home({ allResumeData, allProjectsData }: HomeProps) {
   const filterOutName = [
+    "both-of-us",
     "image-editor-exam",
     "to-be-published",
     "asuwant",
