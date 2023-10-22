@@ -2,12 +2,12 @@ import SkillIcon from "./skill-icon";
 
 import { MDXRemote } from "next-mdx-remote";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPlay, fa1, fa2 } from "@fortawesome/free-solid-svg-icons";
 
 import cardStyles from "../styles/card.module.css";
 import styles from "../styles/project-card.module.css";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { ProjectMdxResource } from "../types/types";
 
 type ProjectCardProps = {
@@ -15,6 +15,10 @@ type ProjectCardProps = {
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const deprecatedAlert = (message: string | undefined) => {
+    alert(message ? message : "준비 중입니다. 다음에 다시 시도해주세요.");
+  };
+
   return (
     <div className={`${cardStyles.card} ${styles.projectCard}`}>
       <div className={styles.projectCardLabel}>
@@ -44,11 +48,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </ul>
         <div className={styles.projectLinksWrapper}>
-          {project.isDeprecated === "Y" && (
-            <span className={styles.projectCardAnnouncement}>
-              {project.announcement}
-            </span>
-          )}
           <div className={styles.projectLinks}>
             <a href={project.githubUrl1} className={styles.projectLinksGithub}>
               <span className={styles.githubIcon}>
@@ -71,11 +70,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 </span>
               </a>
             )}
-            <a href={project.serviceUrl}>
-              <span>
-                <FontAwesomeIcon icon={faPlay as IconProp} />
-              </span>
-            </a>
+            {project.isDeprecated === "Y" ? (
+              <a onClick={() => deprecatedAlert(project.announcement)}>
+                <span>
+                  <FontAwesomeIcon icon={faPlay as IconProp} />
+                </span>
+              </a>
+            ) : (
+              <a href={project.serviceUrl}>
+                <span>
+                  <FontAwesomeIcon icon={faPlay as IconProp} />
+                </span>
+              </a>
+            )}
           </div>
         </div>
       </div>
