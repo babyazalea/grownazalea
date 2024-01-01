@@ -36,6 +36,6 @@ part: "skills"
 
 - [Next.js](https://nextjs.org/)
   - 13 버전 이후 App router가 등장하면서 사용하는 데에 있어 고민이 많아진 프레임워크.
-  - 사내 특정 프로젝트를 Next.js App router로 migration 하다가, 작업량이 너무 많아져 포기한 적이 있다. 또한 SSR에 의한, SSR을 위한 프레임워크라고 여겨져서... SSR이 필요하지 않은 SPA에는 다른 대안(특히 Vite)이 있기에 사용을 주저하게 되는 듯하다.
+  - 사내 특정 프로젝트를 Next.js App router로 마이그레이션 하다가, 작업량이 너무 많아져 포기한 적이 있다. 또한 SSR에 의한, SSR을 위한 프레임워크라고 여겨져서... SSR이 필요하지 않은 SPA에는 다른 대안(특히 Vite)이 있기에 사용을 주저하게 되는 듯하다.
 - [Gatsby](https://www.gatsbyjs.com/)
   - Gatsby를 이용해서 블로그를 만든 적이 있음.
