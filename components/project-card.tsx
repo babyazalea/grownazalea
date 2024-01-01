@@ -3,7 +3,7 @@ import SkillIcon from "./skill-icon";
 import { MDXRemote } from "next-mdx-remote";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faAppStoreIos } from "@fortawesome/free-brands-svg-icons";
 import { faPlay, fa1, fa2 } from "@fortawesome/free-solid-svg-icons";
 
 import cardStyles from "../styles/card.module.css";
@@ -67,6 +67,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 </span>
                 <span className={styles.githubIconText}>
                   <FontAwesomeIcon icon={fa2 as IconProp} />
+                </span>
+              </a>
+            )}
+            {project.appStoreUrl && (
+              <a href={project.appStoreUrl}>
+                <span>
+                  <FontAwesomeIcon icon={faAppStoreIos as IconProp} />
                 </span>
               </a>
             )}
