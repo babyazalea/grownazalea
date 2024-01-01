@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import profilePic from "../../public/profile-pic.png";
+import velogLogo from "../../public/logos/velog-logo.png";
 import styles from "../../styles/profile.module.css";
 
 const tyange = {
@@ -21,6 +22,9 @@ export default function Profile() {
           <div className={styles["profile-links"]}>
             <a href="https://github.com/tyange">
               <FontAwesomeIcon icon={faGithub as IconProp} />
+            </a>
+            <a href="https://velog.io/@tyange/posts" className={styles.velog}>
+              <Image src={velogLogo} alt="velog 로고" />
             </a>
           </div>
         </div>

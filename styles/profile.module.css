@@ -30,8 +30,21 @@
   font-size: 1.5rem;
 }
 
+.profile-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .profile-links a {
   font-size: 1.5rem;
+}
+
+.velog {
+  display: flex;
+  align-items: center;
+  width: 23px;
+  height: fit-content;
 }
 
 .profile-pic {
