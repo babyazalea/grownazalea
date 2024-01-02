@@ -11,4 +11,5 @@ part: "career"
 - react-i18next를 이용한 다국어 작업.
 - [Winilogis](https://www.winilogis.com/)와 Winilogis를 위한 백오피스를 런칭.
 - [Auctionwini Seller Web](https://seller.auctionwini.com/) 정식 서비스 시작.
+- Winipass 런칭.
 - Java + JSP 프로젝트에서 Vue CDN을 활용한 CSR 방식의 페이지 제작 중.
