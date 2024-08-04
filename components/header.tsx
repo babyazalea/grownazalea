@@ -7,10 +7,8 @@ export default function Header() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <div>
-          <Link href={"/"}>
-            <a className={styles.logo}>
-              <span>time to grow up</span>
-            </a>
+          <Link className={styles.logo} href={"/"} passHref>
+            <span>time to grow up</span>
           </Link>
         </div>
       </nav>

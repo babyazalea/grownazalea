@@ -24,7 +24,7 @@ export default function Profile() {
               <FontAwesomeIcon icon={faGithub as IconProp} />
             </a>
             <a href="https://velog.io/@tyange/posts" className={styles.velog}>
-              <Image src={velogLogo} alt="velog 로고" />
+              <Image width={23} src={velogLogo} alt="velog 로고" />
             </a>
           </div>
         </div>
