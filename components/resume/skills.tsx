@@ -9,7 +9,7 @@ type SkillsProps = {
 export default function Skills({ skillsData }: SkillsProps) {
   return (
     <div className={styles.skills}>
-      <h2 className={styles["skills-title"]}>쓰고 있는 기술들</h2>
+      <h2 className={styles["skills-title"]}>보유 기술</h2>
       <hr />
       <MDXRemote {...skillsData.mdxSource} />
     </div>
