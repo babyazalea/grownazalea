@@ -1,6 +1,6 @@
 import { MDXRemote } from "next-mdx-remote";
-import styles from "../../styles/skills.module.css";
 import { MdxResource } from "../../types/types";
+import styles from "../../styles/skills.module.css";
 
 type SkillsProps = {
   skillsData: MdxResource;
