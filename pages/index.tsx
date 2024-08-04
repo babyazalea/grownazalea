@@ -15,7 +15,6 @@ type HomeProps = {
 export default function Home({ allResumeData, allProjectsData }: HomeProps) {
   const filterOutName = [
     "both-of-us",
-    "image-editor-exam",
     "to-be-published",
     "asuwant",
     "burger-finder",
@@ -39,7 +38,7 @@ export default function Home({ allResumeData, allProjectsData }: HomeProps) {
   );
 
   const skillsData = allResumeData.find(
-    (resumeData) => resumeData.id === "skills"
+    (resumeData) => resumeData.id === "skills2"
   );
 
   return (

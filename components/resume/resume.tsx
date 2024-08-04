@@ -24,8 +24,8 @@ export default function Resume({
     <div className={styles.resume}>
       <Profile />
       <Introduction introductionData={introductionData} />
-      <Skills skillsData={skillsData} />
       <Career careerData={careerData} />
+      <Skills skillsData={skillsData} />
       <Projects projects={allProjectsData} />
     </div>
   );
