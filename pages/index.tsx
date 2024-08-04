@@ -33,8 +33,8 @@ export default function Home({ allResumeData, allProjectsData }: HomeProps) {
     (resumeData) => resumeData.id === "introduction"
   );
 
-  const developmentExperienceData = allResumeData.find(
-    (resumeData) => resumeData.id === "development-experience"
+  const ifYouHireMeData = allResumeData.find(
+    (resumeData) => resumeData.id === "if-you-hire-me"
   );
 
   const careerData = allResumeData.find(
@@ -56,7 +56,7 @@ export default function Home({ allResumeData, allProjectsData }: HomeProps) {
       <Layout>
         <Resume
           introductionData={introductionData}
-          developmentExperienceData={developmentExperienceData}
+          IfYouHireMeData={ifYouHireMeData}
           careerData={careerData}
           skillsData={skillsData}
           allProjectsData={representativeProjects}
