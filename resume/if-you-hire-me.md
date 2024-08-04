@@ -20,7 +20,7 @@ part: "if-you-hire-me"
 
 - 특정 프레임워크가 아니더라도 쉽게 개발을 진행할 수 있습니다.
 
-  - Next.js, Angular, SvelteKit, SolidJS 등 다양한 프레임워크로 사이드 프로젝트를 진행했습니다.
+  - Next.js, Angular, SvelteKit, SolidJS, Flutter 등 다양한 프레임워크로 사이드 프로젝트를 진행했습니다.
   - 새로운 프레임워크, 기술 스택에 금방 익숙해질 수 있는 적응력을 갖고 있습니다.
 
 - RESTful API와 CI/CD, '기획 -> 디자인 -> 개발' 같은 업무 방식에 대한 기본적인 이해도를 갖추고 있어 수월하게 협업할 수 있습니다.
